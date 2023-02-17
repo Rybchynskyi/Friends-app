@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FriendsApp</title>
+    <link rel="stylesheet"  href="css/style.css" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.svg"/>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <img class="header__logo" src="img/logo4.svg" alt="logo">
+        <h1 class="header__name">Friends app</h1>
+        <form class="header__search">
+            <p><input id="inputSearch" class="search_input" type="text" placeholder="search"></p>
+            <input class="search_submit" type="submit" value=""></p>
+        </form>
+    </header>
+    <main id="main" class="main">
+        <aside class="sidebar">
+            <div class="sort">
+                <div class="filterType">Sort:</div>
+                <div class="text-center">By name</div>
+                <div class="display-flex">
+                    <button id="filterNameUp" class="filterButton"><i class="fa-solid fa-chevron-up"></i></button>
+                    <button id="filterNameDown" class="filterButton"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <div class="text-center">By age</div>
+                <div class="display-flex">
+                    <button id="filterAgeDown" class="filterButton"><i class="fa-solid fa-chevron-up"></i></button>
+                    <button id="filterAgeUp" class="filterButton"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+            </div>
+            <div class="filter">
+                <div class="filterType">
+                    Filter by sex:
+                </div>
+                <div class="filterVariants">
+                    <div class="dBlock">
+                        <input class="radiobutton" type="radio" name="gender" id="genderAll" checked>
+                        <label for="genderAll">All</label>
+                    </div>
+                    <div class="dBlock">
+                        <input class="radiobutton" type="radio" name="gender" id="genderMan">
+                        <label for="genderMan">Man</label>
+                    </div>
+                    <div class="dBlock">
+                        <input class="radiobutton" type="radio" name="gender" id="genderWoman">
+                        <label for="genderWoman">Woman</label>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="filterType">
+                    Actions
+                </div>
+                <div class="display-flex">
+                    <button id="reset" class="resetButton">Reset</button>
+                </div>
+                <div class="display-flex">
+                    <button id="newList" class="resetButton">New list</button>
+                </div>
+            </div>
+        </aside>
+        <aside class="sidebar_mobile">
+            <div class="relative">
+                <button id="choiceButtonMobile" class="choiceButton"><i class="fa-solid fa-sort"></i> Sort</button>
+                <div class="sortVariants dNone">
+                    <div class="text-center">By name</div>
+                    <div class="display-flex">
+                        <button id="filterNameUpMobile" class="filterButton"><i class="fa-solid fa-chevron-up"></i></button>
+                        <button id="filterNameDownMobile" class="filterButton"><i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                    <div class="text-center">By age</div>
+                    <div class="display-flex">
+                        <button id="filterAgeDownMobile" class="filterButton"><i class="fa-solid fa-chevron-up"></i></button>
+                        <button id="filterAgeUpMobile" class="filterButton"><i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <button id="filterButtonMobile" class="choiceButton "><i class="fa-solid fa-filter"></i> Filter</button>
+                <div class="filterVariant dNone">
+                    <div class="filterType">
+                        Filter by sex:
+                    </div>
+                    <div class="dBlock">
+                        <input class="radiobutton" type="radio" name="genderMod" id="genderAllMobile" checked>
+                        <label for="genderAll">All</label>
+                    </div>
+                    <div class="dBlock">
+                        <input class="radiobutton" type="radio" name="genderMod" id="genderManMobile">
+                        <label for="genderMan">Man</label>
+                    </div>
+                    <div class="dBlock">
+                        <input class="radiobutton" type="radio" name="genderMod" id="genderWomanMobile">
+                        <label for="genderWoman">Woman</label>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <button id="actionButtonMobile" class="choiceButton ">Actions</button>
+                <div class="filterActions dNone">
+                    <div class="display-flex">
+                        <button id="resetMobile" class="resetButton">Reset</button>
+                    </div>
+                    <div class="display-flex">
+                        <button id="newListMobile" class="resetButton">New list</button>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <form id="searchMobile" class="searchButton">
+                    <p style="margin: 0px;"><input id="inputSearchMobile" class="search_input_mobile" type="text" placeholder="search"></p>
+                    <div id="searchButtonMobile" class="search_submit_mobile" value=""></div>
+                </form>
+            </div>
+        </aside>
+        <section id="cardList" class="content">
+
+        </section>
+    </main>
+    <footer class="footer">Made with <i class="fa-solid fa-heart"></i> by Rybchynskyi</footer>
+</div>
+
+
+
+<script src="js/scripts.js"></script>
+<script src="https://kit.fontawesome.com/cdf8d0e039.js" crossorigin="anonymous"></script>
+</body>
+</html>
