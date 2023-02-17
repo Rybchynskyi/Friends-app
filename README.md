@@ -11,7 +11,7 @@ Result:<br>
 1. Download the project
 2. Run index.html
 
-This project is the practical task from cottans-school
+This project is the practical task from cottans-academy
 
 We receive the JSON object from the randomuser.me web-site, which sends information about random users.
 The main task was in creating an interesting interface that can visualize this information.
